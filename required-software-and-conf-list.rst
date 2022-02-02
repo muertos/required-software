@@ -21,8 +21,5 @@ Configuration Files
 
     /etc/hosts
     ~/.ssh/config
-
-Install Path of Exile
----------------------
-
-* https://www.pathofexile.com/forum/view-thread/2970019/page/1
+    ~/.vimrc
+    ~/.bashrc
