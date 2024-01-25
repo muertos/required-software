@@ -7,11 +7,12 @@
       - barrier
       - copyq
       - keepassxc
-      - piper  
+      - piper
       - vim
+      - htop
 
   tasks:
-  - name: Install software 
+  - name: Install software
     ansible.builtin.apt:
       name: "{{ item }}"
       update_cache: yes # seems an update is required before packages are installed
