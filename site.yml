@@ -1,0 +1,20 @@
+---
+# Install packages needed for work
+
+- hosts: localhost
+  vars:
+    software:
+      - barrier
+      - copyq
+      - keepassxc
+      - piper  
+      - vim
+
+  tasks:
+  - name: Install software 
+    ansible.builtin.apt:
+      name: "{{ item }}"
+      update_cache: yes # seems an update is required before packages are installed
+      state: latest
+    become: yes
+    loop: "{{ software }}"
